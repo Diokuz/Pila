@@ -1,0 +1,7 @@
+.baron {
+    color: green;
+}
+
+@media screen and (max-width: 980px) {
+.baron {}
+}

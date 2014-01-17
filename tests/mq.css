@@ -3,17 +3,8 @@
     color: green;
 }
 
-.baron-2 {
-    background: red;
-    color: green;
-}
-
 @media screen and (max-width: 980px) {
 .baron {
     background: pila;
-}
-.baron-2 {
-    background: red;
-    color: green;
 }
 }
