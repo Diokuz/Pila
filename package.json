@@ -1,7 +1,7 @@
 {
   "name": "pila",
-  "description": "CSS remover",
-  "version": "0.0.1",
+  "description": "CSS excluder",
+  "version": "0.1.1",
   "homepage": "https://github.com/Diokuz/pila",
   "authors": [
     "Dmitry Kuznecov <@Diokuz>"
@@ -17,14 +17,15 @@
     "pila",
     "css"
   ],
-  "main": "./pila.js",
+  "main": "./lib/pila.js",
   "dependencies": {
     "css-parse": "~1.6.0",
     "underscore": "~1.5.2",
     "grunt-contrib-jshint": "~0.6.0",
     "grunt-contrib-concat": "~0.1.3",
     "grunt-contrib-uglify": "~0.2.0",
-    "mocha": "~1.9.0"
+    "mocha": "~1.9.0",
+    "cssp": "~1.0.6"
   },
   "bugs": {
     "url": "https://github.com/Diokuz/pila/issues"
