@@ -32,13 +32,20 @@ module.exports = function (grunt) {
                     '<%= pkg.name %>.min.js': ['<%= pkg.name %>.js']
                 }
             }
-        }
+        },
+        mochacli: {
+            options: {
+            },
+            all: [
+                'tests/**.spec.js'
+            ]
+        },
     });
 
-    grunt.loadTasks('tasks'); // Для grunt-mocha-phantomjs
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-mocha-cli');
 
     grunt.registerTask('default', ['uglify:def']);
-    grunt.registerTask('t', ['jshint']);
+    grunt.registerTask('t', ['jshint', 'mochacli']);
 };

@@ -1,7 +1,7 @@
 {
   "name": "pila",
   "description": "CSS excluder",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/Diokuz/pila",
   "authors": [
     "Dmitry Kuznecov <@Diokuz>"
@@ -34,7 +34,8 @@
     "test": "tests"
   },
   "devDependencies": {
-    "mocha": "~1.9.0"
+    "mocha": "~1.9.0",
+    "grunt-mocha-cli": "~1.0.6"
   },
   "scripts": {
     "test": "t"
