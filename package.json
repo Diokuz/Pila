@@ -11,7 +11,7 @@
     "url": "https://github.com/Diokuz/pila.git"
   },
   "bin": {
-    "pila": "./bin/pila"
+    "pila": "node ./bin/pila.js"
   },
   "keywords": [
     "pila",
@@ -20,12 +20,8 @@
   "main": "./lib/pila.js",
   "dependencies": {
     "css-parse": "~1.6.0",
-    "underscore": "~1.5.2",
-    "grunt-contrib-jshint": "~0.6.0",
-    "grunt-contrib-concat": "~0.1.3",
-    "grunt-contrib-uglify": "~0.2.0",
-    "mocha": "~1.9.0",
-    "cssp": "~1.0.6"
+    "lodash": "~2.4.1",
+    "yargs": "~1.2.2"
   },
   "bugs": {
     "url": "https://github.com/Diokuz/pila/issues"
@@ -34,11 +30,12 @@
     "test": "tests"
   },
   "devDependencies": {
-    "mocha": "~1.9.0",
+    "mocha": "*",
+    "grunt-contrib-jshint": "~0.6.0",
     "grunt-mocha-cli": "~1.0.6"
   },
   "scripts": {
-    "test": "t"
+    "test": "grunt t"
   },
   "author": "Diokuz",
   "license": "MIT"

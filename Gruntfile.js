@@ -23,27 +23,16 @@ module.exports = function (grunt) {
                 src: ['pila.js']
             }
         },
-        uglify: {
-            options: {
-                banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
-            },
-            def: {
-                files: {
-                    '<%= pkg.name %>.min.js': ['<%= pkg.name %>.js']
-                }
-            }
-        },
         mochacli: {
             options: {
             },
             all: [
                 'tests/**.spec.js'
             ]
-        },
+        }
     });
 
     grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-mocha-cli');
 
     grunt.registerTask('default', ['uglify:def']);
